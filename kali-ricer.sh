@@ -268,6 +268,7 @@ error_symbol = "[❯](bold #903034)"
 EOF
 
 grep -q 'kali-rice:shell' "$HOME/.zshrc" 2>/dev/null || cat >> "$HOME/.zshrc" <<'EOF'
+# kali-rice:shell
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
